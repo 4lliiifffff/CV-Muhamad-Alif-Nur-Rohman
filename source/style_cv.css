@@ -1,0 +1,196 @@
+/* ===== Palet Warna ===== */
+:root {
+    --warna-primer: #1E3A5F;
+    --teks-gelap: #2C3E50;
+    --teks-terang: #607D8B;
+    --latar-belakang: #F5F7FA;
+    --warna-garis: #D1D9E6;
+}
+
+/* ===== Style CSS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--latar-belakang);
+    color: var(--teks-gelap);
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 20px 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Header ===== */
+header {
+    background: var(--warna-primer);
+    color: white;
+    padding: 30px 35px;
+}
+
+.bagian-profil {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.foto-profil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+}
+
+.info-header {
+    flex: 1;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.info-kontak {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 13px;
+    opacity: 0.95;
+}
+
+.info-kontak i {
+    margin-right: 6px;
+    opacity: 0.8;
+}
+
+/* ===== Bagian-bagian ===== */
+.bagian {
+    padding: 25px 35px;
+    border-bottom: 1px solid var(--warna-garis);
+}
+
+.bagian:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: var(--warna-primer);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--warna-primer);
+}
+
+/* ===== Item ===== */
+.item {
+    margin-bottom: 18px;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+h3 {
+    color: var(--teks-gelap);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.item p {
+    margin-bottom: 3px;
+    color: var(--teks-terang);
+    font-size: 14px;
+}
+
+.detail {
+    font-size: 13px;
+    color: var(--teks-terang);
+}
+
+.teknologi {
+    font-size: 13px;
+    color: var(--warna-primer);
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* ===== Daftar ===== */
+ul {
+    margin: 8px 0 0 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 4px;
+    color: var(--teks-terang);
+    font-size: 13px;
+}
+
+/* ===== Keterampilan ===== */
+.daftar-keterampilan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item-keterampilan {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.item-keterampilan strong {
+    color: var(--teks-gelap);
+    font-weight: 600;
+}
+
+/* ===== Responsif ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px 5px;
+    }
+
+    header,
+    .bagian {
+        padding: 20px 25px;
+    }
+
+    .bagian-profil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-profil {
+        width: 90px;
+        height: 90px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .info-kontak {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}

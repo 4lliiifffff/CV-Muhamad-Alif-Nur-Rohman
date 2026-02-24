@@ -1,196 +1,615 @@
 /* ===== Palet Warna ===== */
 :root {
-    --warna-primer: #1E3A5F;
-    --teks-gelap: #2C3E50;
-    --teks-terang: #607D8B;
-    --latar-belakang: #F5F7FA;
-    --warna-garis: #D1D9E6;
+  --warna-primer: #1e3a5f;
+  --teks-gelap: #2c3e50;
+  --teks-terang: #607d8b;
+  --latar-belakang: #f5f7fa;
+  --warna-garis: #d1d9e6;
 }
 
 /* ===== Style CSS ===== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--latar-belakang);
-    color: var(--teks-gelap);
-    line-height: 1.5;
-    font-size: 14px;
-    padding: 20px 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--latar-belakang);
+  color: var(--teks-gelap);
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 20px 10px;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== Header ===== */
 header {
-    background: var(--warna-primer);
-    color: white;
-    padding: 30px 35px;
+  background-color: var(--warna-primer);
+  color: white;
+  padding: 30px 35px;
+  width: 100%;
 }
 
 .bagian-profil {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+  text-align: center;
 }
 
 .foto-profil {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  object-fit: cover;
 }
 
 .info-header {
-    flex: 1;
+  flex: 1;
 }
 
 h1 {
-    font-size: 26px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    letter-spacing: 0.5px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  color: white;
 }
 
 .info-kontak {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-    font-size: 13px;
-    opacity: 0.95;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 13px;
+  opacity: 0.95;
+  color: white;
 }
 
 .info-kontak i {
-    margin-right: 6px;
-    opacity: 0.8;
+  margin-right: 6px;
+  opacity: 0.8;
 }
 
 /* ===== Bagian-bagian ===== */
 .bagian {
-    padding: 25px 35px;
-    border-bottom: 1px solid var(--warna-garis);
+  padding: 25px 35px;
+  border-bottom: 1px solid var(--warna-garis);
 }
 
 .bagian:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 h2 {
-    color: var(--warna-primer);
-    font-size: 17px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid var(--warna-primer);
+  color: var(--warna-primer);
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--warna-primer);
 }
 
 /* ===== Item ===== */
 .item {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 h3 {
-    color: var(--teks-gelap);
-    font-size: 15px;
-    font-weight: 600;
-    margin-bottom: 4px;
+  color: var(--teks-gelap);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .item p {
-    margin-bottom: 3px;
-    color: var(--teks-terang);
-    font-size: 14px;
+  margin-bottom: 3px;
+  color: var(--teks-terang);
+  font-size: 14px;
 }
 
 .detail {
-    font-size: 13px;
-    color: var(--teks-terang);
+  font-size: 13px;
+  color: var(--teks-terang);
 }
 
 .teknologi {
-    font-size: 13px;
-    color: var(--warna-primer);
-    margin-bottom: 6px;
-    font-weight: 500;
+  font-size: 13px;
+  color: var(--warna-primer);
+  margin-bottom: 6px;
+  font-weight: 500;
 }
 
 /* ===== Daftar ===== */
 ul {
-    margin: 8px 0 0 20px;
-    padding: 0;
+  margin: 8px 0 0 20px;
+  padding: 0;
 }
 
 li {
-    margin-bottom: 4px;
-    color: var(--teks-terang);
-    font-size: 13px;
+  margin-bottom: 4px;
+  color: var(--teks-terang);
+  font-size: 13px;
 }
 
 /* ===== Keterampilan ===== */
 .daftar-keterampilan {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .item-keterampilan {
-    font-size: 14px;
-    line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .item-keterampilan strong {
-    color: var(--teks-gelap);
-    font-weight: 600;
+  color: var(--teks-gelap);
+  font-weight: 600;
+}
+
+/* ===== Toolbar ===== */
+.toolbar {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 15px 20px;
+  background: white;
+  max-width: 800px;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.toolbar button {
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background: var(--warna-primer);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.toolbar button:hover {
+  background: #143350;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toolbar button:active {
+  transform: translateY(0);
+}
+
+.toolbar i {
+  font-size: 15px;
+}
+
+/* ===== Bagian Header untuk Collapse ===== */
+.bagian-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bagian-header h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  flex: 1;
+}
+
+.btn-collapse {
+  background: var(--warna-primer);
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.btn-collapse:hover {
+  background: #143350;
+  transform: scale(1.1);
+}
+
+.btn-collapse i {
+  transition: transform 0.3s ease;
+}
+
+.btn-collapse.collapsed i {
+  transform: rotate(180deg);
+}
+
+/* ===== Bagian Content ===== */
+.bagian-content {
+  max-height: 1000px;
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 1;
+}
+
+.bagian-content.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+/* ===== Copyable Styling ===== */
+.copyable {
+  cursor: pointer;
+  position: relative;
+  transition: opacity 0.2s ease;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.copyable:hover {
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0.95;
+}
+
+.copyable.copied {
+  animation: copyPulse 0.6s ease;
+}
+
+@keyframes copyPulse {
+  0% {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    background: rgba(76, 175, 80, 0.4);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+/* ===== Color Picker Dialog ===== */
+.color-picker-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  min-width: 300px;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.color-option {
+  width: 100%;
+  height: 60px;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.color-option:hover {
+  transform: scale(1.05);
+  border-color: #333;
+}
+
+.color-option.selected {
+  border-color: #000;
+  box-shadow:
+    0 0 0 2px white,
+    0 0 0 4px #000;
+}
+
+.dialog-content h3 {
+  margin: 0 0 15px 0;
+  color: var(--teks-gelap);
+}
+
+.dialog-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.dialog-buttons button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-confirm {
+  background: var(--warna-primer);
+  color: white;
+}
+
+.btn-confirm:hover {
+  background: #143350;
+}
+
+.btn-cancel {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn-cancel:hover {
+  background: #d0d0d0;
+}
+
+/* ===== Toast Notification ===== */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4caf50;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation:
+    slideIn 0.3s ease,
+    slideOut 0.3s ease 2.7s;
+  z-index: 1001;
+  font-size: 14px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(400px);
+    opacity: 0;
+  }
 }
 
 /* ===== Responsif ===== */
 @media (max-width: 768px) {
-    body {
-        padding: 10px 5px;
-    }
+  body {
+    padding: 10px 5px;
+  }
 
-    header,
-    .bagian {
-        padding: 20px 25px;
-    }
+  header,
+  .bagian {
+    padding: 20px 25px;
+  }
 
-    .bagian-profil {
-        flex-direction: column;
-        text-align: center;
-    }
+  .bagian-profil {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .foto-profil {
-        width: 90px;
-        height: 90px;
-    }
+  .foto-profil {
+    width: 90px;
+    height: 90px;
+  }
 
-    h1 {
-        font-size: 22px;
-    }
+  h1 {
+    font-size: 22px;
+  }
 
-    .info-kontak {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
+  .info-kontak {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
 
-    h2 {
-        font-size: 16px;
-    }
+  h2 {
+    font-size: 16px;
+  }
+
+  .toolbar {
+    flex-direction: column;
+  }
+
+  .toolbar button {
+    width: 100%;
+  }
+
+  .bagian-header {
+    flex-wrap: wrap;
+  }
+
+  .btn-collapse {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* ===== Print Styles ===== */
+@media print {
+  .toolbar {
+    display: none !important;
+  }
+
+  body {
+    padding: 0;
+    background: white;
+    color: var(--teks-gelap);
+  }
+
+  .container {
+    max-width: 100%;
+    box-shadow: none;
+    margin: 0;
+    background: white;
+  }
+
+  header {
+    background-color: var(--warna-primer);
+    color: white;
+    padding: 30px 35px;
+    page-break-inside: avoid;
+  }
+
+  .bagian {
+    padding: 25px 35px;
+    border-bottom: 1px solid var(--warna-garis);
+    page-break-inside: avoid;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+
+  .bagian-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .bagian-header h2 {
+    color: var(--warna-primer);
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--warna-primer);
+    flex: 1;
+  }
+
+  .btn-collapse {
+    display: none !important;
+  }
+
+  .bagian-content {
+    max-height: none !important;
+    opacity: 1 !important;
+  }
+
+  h1 {
+    color: white;
+    font-size: 26px;
+  }
+
+  h3 {
+    color: var(--teks-gelap);
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .item {
+    page-break-inside: avoid;
+    margin-bottom: 18px;
+  }
+
+  .item p {
+    color: var(--teks-terang);
+    margin-bottom: 3px;
+  }
+
+  .detail {
+    font-size: 13px;
+    color: var(--teks-terang);
+  }
+
+  .teknologi {
+    font-size: 13px;
+    color: var(--warna-primer);
+    font-weight: 500;
+  }
+
+  ul {
+    margin: 8px 0 0 20px;
+  }
+
+  li {
+    margin-bottom: 4px;
+    color: var(--teks-terang);
+    font-size: 13px;
+  }
+
+  .info-kontak {
+    color: white;
+    opacity: 0.95;
+  }
+
+  .copyable {
+    padding: 0;
+    background: none !important;
+    cursor: text;
+    color: inherit;
+  }
+
+  .daftar-keterampilan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item-keterampilan {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--teks-terang);
+  }
+
+  .item-keterampilan strong {
+    color: var(--teks-gelap);
+    font-weight: 600;
+  }
+
+  .toast {
+    display: none;
+  }
 }

@@ -1,103 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Muhamad Alif Nur Rohman</title>
-    <link rel="icon" type="image/x-icon" href="source/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="source/style_cv.css">
-</head>
+    <link rel="icon" type="image/x-icon" href="source/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="source/style_cv.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="container">
+      <div class="toolbar">
+        <button id="btnWarna" title="Ubah Warna Profil">
+          <i class="fa-solid fa-palette"></i> Ubah Warna
+        </button>
+        <button id="btnPrint" title="Cetak CV">
+          <i class="fa-solid fa-print"></i> Print CV
+        </button>
+      </div>
 
-<div class="container">
-
-    <header>
+      <header id="header">
         <div class="bagian-profil">
-            <img src="source/download.png" alt="Foto Profil" class="foto-profil">
-            <div class="info-header">
-                <h1>MUHAMAD ALIF NUR ROHMAN</h1>
-                <div class="info-kontak">
-                    <span><i class="fa-solid fa-location-dot"></i> Subang, Jawa Barat</span>
-                    <span><i class="fa-solid fa-phone"></i> +62-851-4326-8748</span>
-                    <span><i class="fa-solid fa-envelope"></i> muhamad.10111033@student.polsub.ac.id</span>
-                </div>
+          <img
+            src="source/download.png"
+            alt="Foto Profil"
+            class="foto-profil"
+          />
+          <div class="info-header">
+            <h1>MUHAMAD ALIF NUR ROHMAN</h1>
+            <div class="info-kontak">
+              <span
+                ><i class="fa-solid fa-location-dot"></i> Subang, Jawa
+                Barat</span
+              >
+              <span class="copyable" data-type="phone" title="Klik untuk salin"
+                ><i class="fa-solid fa-phone"></i> +62-851-4326-8748</span
+              >
+              <span class="copyable" data-type="email" title="Klik untuk salin"
+                ><i class="fa-solid fa-envelope"></i>
+                muhamad.10111033@student.polsub.ac.id</span
+              >
             </div>
+          </div>
         </div>
-    </header>
+      </header>
 
-    <section class="bagian">
-        <h2>Pendidikan</h2>
-        <div class="item">
+      <section class="bagian">
+        <div class="bagian-header">
+          <h2>Pendidikan</h2>
+          <button class="btn-collapse" title="Sembunyikan/Tampilkan">
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </div>
+        <div class="bagian-content">
+          <div class="item">
             <h3>Politeknik Negeri Subang</h3>
             <p>D3 Sistem Informasi</p>
             <p class="detail">IPK: 3.98 / 4.00 | 2024 – Sekarang</p>
-        </div>
-        <div class="item">
+          </div>
+          <div class="item">
             <h3>SMA Negeri 2 Subang</h3>
             <p class="detail">Nilai: 84.09 / 100 | 2021 – 2024</p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="bagian">
-        <h2>Prestasi</h2>
-        <div class="item">
+      <section class="bagian">
+        <div class="bagian-header">
+          <h2>Prestasi</h2>
+          <button class="btn-collapse" title="Sembunyikan/Tampilkan">
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </div>
+        <div class="bagian-content">
+          <div class="item">
             <h3>Juara 1 – Kompetisi Film Pendek Internasional</h3>
             <p class="detail">Politeknik Negeri Sambas | Mei 2025</p>
             <ul>
-                <li>Memimpin produksi kreatif dan koordinasi proyek</li>
-                <li>Menghasilkan proyek media digital yang diakui secara internasional</li>
+              <li>Memimpin produksi kreatif dan koordinasi proyek</li>
+              <li>
+                Menghasilkan proyek media digital yang diakui secara
+                internasional
+              </li>
             </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="bagian">
-        <h2>Proyek</h2>
-        <div class="item">
+      <section class="bagian">
+        <div class="bagian-header">
+          <h2>Proyek</h2>
+          <button class="btn-collapse" title="Sembunyikan/Tampilkan">
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </div>
+        <div class="bagian-content">
+          <div class="item">
             <h3>Sistem Otomatisasi Pembuatan Surat Desa</h3>
             <p class="teknologi">Excel VBA</p>
             <ul>
-                <li>Mengembangkan aplikasi otomatisasi pembuatan dokumen</li>
-                <li>Mengurangi waktu pemrosesan hingga 50%</li>
-                <li>Menjamin standarisasi template dokumen 100%</li>
+              <li>Mengembangkan aplikasi otomatisasi pembuatan dokumen</li>
+              <li>Mengurangi waktu pemrosesan hingga 50%</li>
+              <li>Menjamin standarisasi template dokumen 100%</li>
             </ul>
-        </div>
-        <div class="item">
+          </div>
+          <div class="item">
             <h3>Website E-Catalogue Toko Florist</h3>
             <p class="teknologi">PHP Native, MySQL</p>
             <ul>
-                <li>Membangun sistem web multi-peran (Admin, Pegawai, Pelanggan, Tamu)</li>
-                <li>Menerapkan kontrol akses berbasis peran</li>
-                <li>Mengembangkan fitur manajemen produk dan katalog publik</li>
+              <li>
+                Membangun sistem web multi-peran (Admin, Pegawai, Pelanggan,
+                Tamu)
+              </li>
+              <li>Menerapkan kontrol akses berbasis peran</li>
+              <li>Mengembangkan fitur manajemen produk dan katalog publik</li>
             </ul>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="bagian">
-        <h2>Publikasi</h2>
-        <div class="item">
-            <p>"Rancang Bangun Sistem Informasi Pemesanan Toko Florist Berbasis Website Menggunakan Metodologi Scrum untuk Meningkatkan Kemudahan Transaksi Pelanggan"</p>
-            <p class="detail">Jurnal Sistem Informasi dan Aplikasi (JSIA), 2025</p>
+      <section class="bagian">
+        <div class="bagian-header">
+          <h2>Publikasi</h2>
+          <button class="btn-collapse" title="Sembunyikan/Tampilkan">
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
         </div>
-    </section>
+        <div class="bagian-content">
+          <div class="item">
+            <p>
+              "Rancang Bangun Sistem Informasi Pemesanan Toko Florist Berbasis
+              Website Menggunakan Metodologi Scrum untuk Meningkatkan Kemudahan
+              Transaksi Pelanggan"
+            </p>
+            <p class="detail">
+              Jurnal Sistem Informasi dan Aplikasi (JSIA), 2025
+            </p>
+          </div>
+        </div>
+      </section>
 
-    <section class="bagian">
-        <h2>Keterampilan & Kompetensi</h2>
-        <div class="daftar-keterampilan">
+      <section class="bagian">
+        <div class="bagian-header">
+          <h2>Keterampilan & Kompetensi</h2>
+          <button class="btn-collapse" title="Sembunyikan/Tampilkan">
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </div>
+        <div class="bagian-content">
+          <div class="daftar-keterampilan">
             <div class="item-keterampilan">
-                <strong>Bahasa Pemrograman:</strong> PHP, Laravel, HTML, CSS, JavaScript, VBA
+              <strong>Bahasa Pemrograman:</strong> PHP, Laravel, HTML, CSS,
+              JavaScript, VBA
             </div>
             <div class="item-keterampilan">
-                <strong>Tools & Platform:</strong> MySQL, phpMyAdmin, Laragon, XAMPP, Visual Studio Code, Microsoft Office
+              <strong>Tools & Platform:</strong> MySQL, phpMyAdmin, Laragon,
+              XAMPP, Visual Studio Code, Microsoft Office
             </div>
             <div class="item-keterampilan">
-                <strong>Creative Tools:</strong> Adobe After Effects, Photoshop, Illustrator
+              <strong>Creative Tools:</strong> Adobe After Effects, Photoshop,
+              Illustrator
             </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </div>
 
-</div>
-
-</body>
+    <script src="source/script.js"></script>
+  </body>
 </html>
